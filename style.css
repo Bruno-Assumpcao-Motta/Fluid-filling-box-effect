@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+    background: #ffefdb;
+    color: #7c4715;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainbox {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: #ae6e2e 4px solid;
+    border-radius: 8px;
+    background-color: rgb(60, 41, 16);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.mainbox > p {
+    font-size: 22px;
+}
+
+.fluidbox {
+    min-width: 200%;
+    min-height: 225%;
+    border-radius: 30%;
+    position: absolute;
+    background-color: #ffefdb;
+    animation: spin 5s linear infinite;
+    z-index: 1;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-850px) rotate(360deg);
+    }
+}
+
